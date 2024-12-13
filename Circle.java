@@ -18,8 +18,12 @@ public class Circle
         
     /**
      * Create a new circle at default position with default color.
+     * @param string 
+     * @param k 
+     * @param j 
+     * @param i 
      */
-    public Circle()
+    public Circle(int i, int j, int k, String string)
     {
         diameter = 68;
         xPosition = 230;

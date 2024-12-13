@@ -4,8 +4,8 @@ import javax.swing.Timer;
 /**
  * Draw a pretty picture composed of shape objects on a canvas
  * 
- * @author: (Your name)
- * @version: (Date)
+ * @author: (Samuel Smith)
+ * @version: (12/13/2024)
  * 
  */
 public class Picture
@@ -21,13 +21,20 @@ public class Picture
         // Get a reference to the canvas for this drawing and set its title.
         pic = Canvas.getCanvas();
         pic.setTitle("Bouncing Ball");
-        pic.setBackgroundColor("white");
+        pic.setBackgroundColor("blue");
         
         // Turn off automatic redrawing
         pic.pause(true);
         
-        ball = new Circle();
-        ball.makeVisible();
+        //define shapes
+        Circle cloudLeft = new Circle(160,60,100,"white");
+        Circle cloudRight = new Circle(60,240,100,"white");
+        Circle cloudCenter = new Circle(80,200,100,"white");
+        cloudCenter.makeVisible();
+        cloudLeft.makeVisible();
+        cloudRight.makeVisible();
+        
+
         
         // Show the initial picture
         pic.redraw();
